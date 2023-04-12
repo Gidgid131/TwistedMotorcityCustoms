@@ -1,0 +1,126 @@
+.sidebar-wrapper {
+    position: absolute;
+    left: 0;
+    width: 262px;
+    height: 100%;
+    background: rgb(66, 0, 128);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+  
+.sidebar-wrapper .title {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 0px;
+    background-color: rgb(108, 0, 194);
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-wrapper .categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.sidebar-wrapper .categories a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: .4s;
+  }
+  
+  .sidebar-wrapper .categories li:hover > a {
+    background-color: #f4f4f4;
+    color: black;
+    padding-left: 40px;
+  }
+  
+  .sidebar-wrapper .categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .sidebar-wrapper .categories ul li a {
+    line-height: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(77, 0, 144);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+  .sidebar-wrapper .categories ul li a:hover {
+    background-color: rgb(108, 0, 194);
+  }
+  
+  .sidebar-wrapper .rotate-btn {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .sidebar-wrapper.rotate1 .title {
+    transform: rotate(90deg);
+    transform-origin: left top;
+  }
+  
+  .sidebar-wrapper.rotate2 .title {
+    transform: rotate(180deg);
+    transform-origin: center center;
+  }
+  
+  .sidebar-wrapper.rotate3 .title {
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+  }
+  
+  .sidebar-wrapper.rotate4 .title {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  
+  .sidebar-wrapper.rotate1 .categories li:nth-child(1) {
+    order: 1;
+  }
+  
+  .sidebar-wrapper.rotate1 .categories li:nth-child(2) {
+    order: 2;
+  }
+  
+  .sidebar-wrapper.rotate1 .categories li:nth-child(3) {
+    order: 3;
+  }
+  
+  .sidebar-wrapper.rotate2 .categories li:nth-child(1) {
+    order: 3;
+  }
+  
+  .sidebar-wrapper.rotate2 .categories li:nth-child(2) {
+    order: 2;
+  }
+  
+  .sidebar-wrapper.rotate2 .categories li:nth-child(3) {
+    order: 1;
+  }
+  
+  .sidebar-wrapper.rotate3 .categories li:nth-child(1) {
+    order: 3;
+  }
+  
+  .sidebar-wrapper.rotate3 .categories li:nth-child(2) {
+    order: 2;
+  }
+  
+  .sidebar-wrapper.rotate3 .categories li:nth-child(3) {
+    order: 1;
+  }
